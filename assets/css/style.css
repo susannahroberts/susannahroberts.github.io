@@ -1,0 +1,541 @@
+html {
+	height: auto;
+	padding: 0;
+}
+
+head {
+
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	top: 0; 
+	height: auto; /*bc height 100% isn't working*/
+	position: relative;
+}
+
+* {
+	font-family: 'Lato', sans-serif;
+	/*font-family: 'Montserrat', sans-serif;
+*/}
+
+
+#landing-container  {
+    background: url('../img/background.jpg');
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+   /* height: 100%;*/
+    position: absolute;
+    margin: 0;
+    right: 0;
+}
+
+#header-container {
+	margin: 10px;
+	z-index: 15;
+	position: relative;
+}
+
+#site-name {
+	display: inline-block;
+	color: white;
+	letter-spacing: 1.5px;
+
+
+}
+
+.nav-item {
+	float: right;
+	display: inline-block;
+	top: 0;
+	padding-right: 20px;
+	color: white;
+
+}
+
+.nav-item:hover {
+	text-decoration: underline;
+
+}
+
+#container {
+	width: 960px;
+	position: absolute;
+	top: 50%;
+/*	margin-top: -(200)px;*/
+	text-align: center;
+	margin: 0 auto;
+
+	/*width: calc(100% - 90px);
+	height: 110%;
+	top: 0;
+	position: relative;
+	float: right;
+	padding-bottom: 15px;
+*/
+}
+
+#site-title {
+	letter-spacing: 4px;
+	color: white;
+	padding: 10px 0;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+
+#gallery-container {
+	clear: both;
+	height: auto;
+	width: 100%;
+	bottom: 0;
+	position: absolute;
+
+}
+
+#gallery-header-container {
+	padding: 25px 0;
+	z-index: 15;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	bottom: 0;
+	vertical-align: bottom;
+
+}
+
+#gallery-header {
+	position: relative;
+	letter-spacing: 1.5px;
+	z-index: 15;
+	display: inline-block;
+	margin-left: 10px;
+	/*text-transform: uppercase;*/
+
+
+}
+ .gallery-header-item {
+ 	display: inline-block;
+ 	float: right;
+ 	padding-right: 20px;
+ }
+
+.gallery-header-item:hover {
+	text-decoration: underline;
+}
+
+
+ #gallery-content-container {
+ 	margin: 0 auto;
+ 	text-align: center;
+ 	width: 960px;
+
+ }
+
+
+.column {
+	clear: both;
+	position: relative;
+	height: 620px; /*change*/
+	width: 280px;
+	margin: 0 auto; /*how to get centered?*/
+	/*margin-bottom: 20px;*/
+/*	margin-top: 20px;*/
+	background-color: white;
+	padding: 0px;
+	display: inline-block;
+	text-align: center;
+
+
+}
+
+.gallery-item {
+	width: 250px;
+	margin: 15px auto;
+	background-color: white;
+	z-index: 20;
+	height: 180px;
+	position: relative;
+	padding: 0;
+	
+	opacity: 1;
+
+}
+
+.gallery-item:hover {
+	opacity: 0.5;
+	transition: 0.3s;
+	background-image: linear-gradient(rgba(72,76,97,0) 0%, rgba(72,76,97,0.8)75%);	
+}
+
+.gallery-item img:hover {
+	-webkit-filter: brightness(0.3);
+}
+
+ .gallery-item img {
+	max-width: 270px;
+	max-height: 200px;
+	margin: 0 auto;
+	padding: 0;
+	vertical-align: bottom;
+
+ }
+
+.gallery-text {
+	visibility: hidden;
+	position: absolute;
+	margin: 0 auto;
+	display: inline-block;
+	width: 100%;
+	left: 0;
+	top: 50%;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	/*margin-top: -(40px);*/
+	transition: 0.1s, ease-out 0s;
+	z-index: 10000;
+	opacity: 1;
+}
+
+
+
+.bottombar-container { 
+	clear: both;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	/*margin-top: 20px;*/
+	line-height: 18px;
+	z-index: 5;
+	border-top: 1px solid #DDD; 
+    border-bottom width:100%;
+	
+}
+
+
+.bottombar-item {
+	line-height: 14px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	display: inline-block;
+	color: black;
+	z-index: 6;
+}
+
+#bottombar-item-2 {
+	font-size: 12px;
+	display: block;
+	color: black;
+	z-index: 6;
+}
+
+#scroll-up {
+	background: url('../img/up-arrow.png') no-repeat;
+	background-size: 100% 100%;
+    position: fixed;
+    visibility: hidden;
+    z-index: 1000;
+    width: 30px;
+    height: 40px;
+    padding: 0px 15px;
+    bottom: 0;
+   float: right;
+   right: 20px;
+   bottom: 20px;
+   cursor: pointer;
+   border-radius: 50%;
+/*   -webkit-transition: all 0.1s ease-in;
+   -moz-transition: all 0.1s ease-in;
+  	transition: all 0.1s ease-in;*/
+}
+
+#scroll-up:hover {
+	/*background-color: #888888;*/
+}
+
+#scroll-up.show {
+	visibility: visible;
+	/*opacity: 1;*/
+	cursor: pointer;
+}
+
+
+#slideshow-container {
+	height: auto;
+
+}
+#slideshow-header-container {
+	padding: 15px 0;
+	z-index: 15;
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	margin: 0 auto;
+	bottom: 0;
+	vertical-align: bottom;
+
+}
+
+#slideshow-header {
+	position: relative;
+	z-index: 15;
+	letter-spacing: 1.5px;
+	display: inline-block;
+	margin-left: 10px;
+	font-size: 16px;
+	/*text-transform: uppercase;*/
+
+
+}
+ .slideshow-header-item {
+ 	display: inline-block;
+ 	float: right;
+ 	padding-right: 20px;
+
+ }
+
+ .slideshow-header-item:hover {
+	text-decoration: underline;
+
+}
+
+#slideshow-title {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 30px;
+	letter-spacing: 3px;
+
+}
+
+#slideshow-section {
+	height: auto;
+	margin-bottom: 20px; /*bc hieght 100% isn't working*/
+}
+
+.carousel-container {
+	width: 960px;
+	height: 600px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	position: relative;
+}
+
+
+#slideshow-carousel {
+	clear: both;
+	margin-left: 0;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: center;
+	width: 7680px;
+	height: 550px;
+	margin-bottom: 20px;
+
+}
+
+.carousel-item {
+	width: 960px;
+	z-index: 1000;
+	height: auto;
+	position: relative;
+	height: 100%;
+	float: left;
+	display: inline-block;
+}
+
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+#carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+ .slideshow-carousel img {
+	max-width: 80%;
+	max-height: 450px;
+	text-align: center;
+	padding: 0;
+	padding-bottom: 10px;
+	display: block;
+	margin: 0 auto;
+	vertical-align: bottom;
+ }
+
+ .slideshow-carousel {
+ 	margin: 10px 0;
+
+ }
+
+
+.caption {
+	text-align: center;
+	display: inline-block;
+	width: 860px;
+	padding: 10px;
+	left: 0;
+}
+
+ #togglebar-section {
+ 	height: 175px;
+ 	position: relative;
+ 	margin: 0 auto;
+ 	margin-left: 40px;
+ 	margin-right: 40px;
+ 	overflow-x: auto;
+ 	/*margin-bottom: 20px;*/
+
+ }
+
+ .focus {
+ 	opacity: 0.5;
+ 	/*padding: 10px;*/
+ 	/*border: solid 1px gray;*/
+ 	/*border visibility: hidden;*/
+ }
+
+.toggle-item {
+	height: 100px;
+	padding: 12px;
+	display: inline-block;
+	/*border: solid 2px white;*/
+
+}
+
+.toggle-item:hover {
+	opacity: 0.5;
+	transition: 0.4s;
+}
+
+
+/*#toggle-prev {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+  	top: 50%;
+  	left: 13px;
+    padding: 10px;
+    left: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+ Styling for the carousel next button 
+#toggle-next {
+    position: absolute;
+    float: right;
+    right: 13px;
+    top: 50%;
+    /*bottom: 40px;*/
+/*    width: 25px;
+    height: 25px;
+    padding: 10px;
+    right: 60px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}*/*/
+
+.img-scaled {
+	width: 100%;
+	height: 100%;
+}
+
+#slideshow-togglebar {
+	clear: both;
+	padding: 20px;
+	padding-bottom: 5px;
+	background-color: white;
+	height: 130px;
+	width: 1600px;
+	position: absolute;
+	/*bottom: 0;*/
+	display: block;
+	margin: 0 auto;
+	overflow-x: auto;
+	/*text-align: center;*/
+}
+
+ .toggle-item img {
+	width: 170px;
+	height: 100px;
+	margin: 0 auto;
+	padding: 0;
+	vertical-align: bottom;
+
+ }
+
+.slideshow-bottombar-container { 
+	clear: both;
+	width: 100%;
+	height: 20px;
+	bottom: 0; /*why won't this go to the bottom of the page???????????????*/
+	position: relative;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+	padding: 10px 0;
+	line-height: 18px;
+	z-index: 5;
+	border-top: 1px solid #DDD; 
+    border-bottom width:100%;
+	
+}
+
+.slideshow-bottombar-item {
+	line-height: 18px;
+	padding-bottom: 10px;
+	display: inline-block;
+	color: black;
+	z-index: 6;
+	bottom: 0;
+
+}
+
+
