@@ -21,6 +21,27 @@ body {
 	/*font-family: 'Montserrat', sans-serif;*/
 }
 
+a:link {
+	color: black;
+	text-decoration: none;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: black;
+	
+}
+
+
 
 #landing-container  {
     background: url('../img/background.jpg');
@@ -152,12 +173,19 @@ body {
 
 .gallery-item:hover {
 	opacity: 0.5;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
 	transition: 0.3s;
-	background-image: linear-gradient(rgba(72,76,97,0) 0%, rgba(72,76,97,0.8)75%);	
+/*	background-image: linear-gradient(rgba(72,76,97,0) 0%, rgba(72,76,97,0.8)75%);	
+*/
 }
 
 .gallery-item img:hover {
 	-webkit-filter: brightness(0.3);
+	-moz-filter: brightness(0.3);
+	-o-filter: brightness(0.3);
+	filter: brightness(0.3);
 }
 
  .gallery-item img {
@@ -180,6 +208,9 @@ body {
 	color: white;
 	font-size: 18px;
 	font-weight: 700;
+	-webkit-transition: 0.1s, ease-out 0s;
+	-moz-transition: 0.1s, ease-out 0s;
+	-o-transition: 0.1s, ease-out 0s;
 	transition: 0.1s, ease-out 0s;
 	z-index: 10000;
 	opacity: 1;
@@ -329,7 +360,11 @@ body {
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid #fff;
+    z-index: 5000;
     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 #carousel-next {
@@ -343,7 +378,12 @@ body {
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid #fff;
+    z-index: 5000;
     -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
 }
 
 .img-scaled {
@@ -396,7 +436,10 @@ body {
 
 .toggle-item:hover {
 	opacity: 0.5;
-	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
 }
 
 
