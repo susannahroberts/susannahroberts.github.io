@@ -319,7 +319,7 @@ a:active {
 
 .carousel-container {
 	width: 960px;
-	height: 600px;
+	height: 610px;
 	margin-right: auto;
 	margin-left: auto;
 	overflow: hidden;
@@ -412,6 +412,7 @@ a:active {
 	width: 860px;
 	padding: 10px;
 	left: 0;
+	z-index: 9999;
 }
 
  #togglebar-section {
