@@ -12,14 +12,14 @@ body {
 	margin: 0;
 	padding: 0;
 	top: 0; 
-	height: auto; /*bc height 100% isn't working*/
+	height: auto; 
 	position: relative;
 }
 
 * {
 	font-family: 'Lato', sans-serif;
-	/*font-family: 'Montserrat', sans-serif;
-*/}
+	/*font-family: 'Montserrat', sans-serif;*/
+}
 
 
 #landing-container  {
@@ -29,7 +29,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-   /* height: 100%;*/
+    height: auto;
     position: absolute;
     margin: 0;
     right: 0;
@@ -45,8 +45,6 @@ body {
 	display: inline-block;
 	color: white;
 	letter-spacing: 1.5px;
-
-
 }
 
 .nav-item {
@@ -55,29 +53,18 @@ body {
 	top: 0;
 	padding-right: 20px;
 	color: white;
-
 }
 
 .nav-item:hover {
 	text-decoration: underline;
-
 }
 
 #container {
 	width: 960px;
 	position: absolute;
 	top: 50%;
-/*	margin-top: -(200)px;*/
 	text-align: center;
 	margin: 0 auto;
-
-	/*width: calc(100% - 90px);
-	height: 110%;
-	top: 0;
-	position: relative;
-	float: right;
-	padding-bottom: 15px;
-*/
 }
 
 #site-title {
@@ -99,7 +86,6 @@ body {
 	width: 100%;
 	bottom: 0;
 	position: absolute;
-
 }
 
 #gallery-header-container {
@@ -111,7 +97,6 @@ body {
 	margin: 0 auto;
 	bottom: 0;
 	vertical-align: bottom;
-
 }
 
 #gallery-header {
@@ -120,10 +105,9 @@ body {
 	z-index: 15;
 	display: inline-block;
 	margin-left: 10px;
-	/*text-transform: uppercase;*/
-
 
 }
+
  .gallery-header-item {
  	display: inline-block;
  	float: right;
@@ -139,35 +123,29 @@ body {
  	margin: 0 auto;
  	text-align: center;
  	width: 960px;
-
  }
 
 
 .column {
 	clear: both;
 	position: relative;
-	height: 620px; /*change*/
+	height: 620px; 
 	width: 280px;
-	margin: 0 auto; /*how to get centered?*/
-	/*margin-bottom: 20px;*/
-/*	margin-top: 20px;*/
+	margin: 0 auto; 
 	background-color: white;
 	padding: 0px;
 	display: inline-block;
 	text-align: center;
-
-
 }
 
 .gallery-item {
-	width: 250px;
+	width: 270px;
 	margin: 15px auto;
 	background-color: white;
 	z-index: 20;
 	height: 180px;
 	position: relative;
 	padding: 0;
-	
 	opacity: 1;
 
 }
@@ -202,12 +180,10 @@ body {
 	color: white;
 	font-size: 18px;
 	font-weight: 700;
-	/*margin-top: -(40px);*/
 	transition: 0.1s, ease-out 0s;
 	z-index: 10000;
 	opacity: 1;
 }
-
 
 
 .bottombar-container { 
@@ -217,12 +193,10 @@ body {
 	text-align: center;
 	display: block;
 	margin: 0 auto;
-	/*margin-top: 20px;*/
 	line-height: 18px;
 	z-index: 5;
 	border-top: 1px solid #DDD; 
     border-bottom width:100%;
-	
 }
 
 
@@ -257,18 +231,10 @@ body {
    bottom: 20px;
    cursor: pointer;
    border-radius: 50%;
-/*   -webkit-transition: all 0.1s ease-in;
-   -moz-transition: all 0.1s ease-in;
-  	transition: all 0.1s ease-in;*/
-}
-
-#scroll-up:hover {
-	/*background-color: #888888;*/
 }
 
 #scroll-up.show {
 	visibility: visible;
-	/*opacity: 1;*/
 	cursor: pointer;
 }
 
@@ -296,20 +262,16 @@ body {
 	display: inline-block;
 	margin-left: 10px;
 	font-size: 16px;
-	/*text-transform: uppercase;*/
-
-
 }
+
  .slideshow-header-item {
  	display: inline-block;
  	float: right;
  	padding-right: 20px;
-
  }
 
  .slideshow-header-item:hover {
 	text-decoration: underline;
-
 }
 
 #slideshow-title {
@@ -317,12 +279,11 @@ body {
 	margin-bottom: 20px;
 	font-size: 30px;
 	letter-spacing: 3px;
-
 }
 
 #slideshow-section {
 	height: auto;
-	margin-bottom: 20px; /*bc hieght 100% isn't working*/
+	margin-bottom: 20px; 
 }
 
 .carousel-container {
@@ -402,7 +363,6 @@ body {
 
  .slideshow-carousel {
  	margin: 10px 0;
-
  }
 
 
@@ -421,22 +381,16 @@ body {
  	margin-left: 40px;
  	margin-right: 40px;
  	overflow-x: auto;
- 	/*margin-bottom: 20px;*/
-
  }
 
  .focus {
  	opacity: 0.5;
- 	/*padding: 10px;*/
- 	/*border: solid 1px gray;*/
- 	/*border visibility: hidden;*/
  }
 
 .toggle-item {
 	height: 100px;
 	padding: 12px;
 	display: inline-block;
-	/*border: solid 2px white;*/
 
 }
 
@@ -445,41 +399,6 @@ body {
 	transition: 0.4s;
 }
 
-
-/*#toggle-prev {
-    position: absolute;
-    width: 25px;
-    height: 25px;
-  	top: 50%;
-  	left: 13px;
-    padding: 10px;
-    left: 60px;
-    top: 50%;
-    margin-top: -30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    -webkit-transition: all 0.3s;
-}
-
- Styling for the carousel next button 
-#toggle-next {
-    position: absolute;
-    float: right;
-    right: 13px;
-    top: 50%;
-    /*bottom: 40px;*/
-/*    width: 25px;
-    height: 25px;
-    padding: 10px;
-    right: 60px;
-    top: 50%;
-    margin-top: -30px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #fff;
-    -webkit-transition: all 0.3s;
-}*/*/
 
 .img-scaled {
 	width: 100%;
@@ -494,11 +413,9 @@ body {
 	height: 130px;
 	width: 1600px;
 	position: absolute;
-	/*bottom: 0;*/
 	display: block;
 	margin: 0 auto;
 	overflow-x: auto;
-	/*text-align: center;*/
 }
 
  .toggle-item img {
@@ -514,7 +431,7 @@ body {
 	clear: both;
 	width: 100%;
 	height: 20px;
-	bottom: 0; /*why won't this go to the bottom of the page???????????????*/
+	bottom: 0; 
 	position: relative;
 	text-align: center;
 	display: block;
@@ -539,3 +456,4 @@ body {
 }
 
 
+*/
